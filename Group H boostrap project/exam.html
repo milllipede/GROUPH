@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/lin.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{overflow: hidden;}
+        header{position: relative;}
+        .exam{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/lin.jpg" alt="">
+            <h2><span class="danger"></span></h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Page</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">Today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">Grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="index2.html">
+                <span class="material-icons-sharp">Back</span>
+                <!-- <h3>Logout</h3> -->
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active"></span>
+            <span class="material-icons-sharp"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="exam timetable">
+            <h2>Exam Available</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Course</th>
+                        <th>Room no.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13 june 2023</td>
+                        <td>09-12 AM</td>
+                        <td>CSE122</td>
+                        <td>38-718</td>
+                    </tr>
+                    <tr>
+                        <td>16 June 2023</td>
+                        <td>09-12 AM</td>
+                        <td>CSE142</td>
+                        <td>38-718</td>
+                    </tr>
+                    <tr>
+                        <td>18 june 2023</td>
+                        <td>09-12 AM</td>
+                        <td>GNS111</td>
+                        <td>38-718</td>
+                    </tr>
+                    <tr>
+                        <td>20 june 2023</td>
+                        <td>09-12 AM</td>
+                        <td>CSE 132</td>
+                        <td>38-718</td>
+                    </tr>
+                    <tr>
+                        <td>23 june 2023</td>
+                        <td>09-12 AM</td>
+                        <td>CSE152</td>
+                        <td>38-718</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </main>
+
+</body>
+
+<script src="app.js"></script>
+</html>
